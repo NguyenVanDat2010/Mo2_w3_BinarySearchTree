@@ -37,7 +37,7 @@ public class BinarySearchTree {
         return root;
     }
 
-    // Gọi phương thức insert
+    // Gọi phương thức insertRec
     public void insert(int key) {
         root = insertRec(root, key);
     }
@@ -101,6 +101,11 @@ public class BinarySearchTree {
     //Phương thức gọi hàm tìm kiếm
     public void search(int key) {
         root = searchRec(root, key);
+        if (root!=null){
+            System.out.println("Key "+key+" có trong cây nhị phân");
+        }else {
+            System.out.println("Key "+key+" không có trong cây nhị phân");
+        }
     }
 
     /* Hàm đệ qui để xóa phần tử khỏi mảng */
