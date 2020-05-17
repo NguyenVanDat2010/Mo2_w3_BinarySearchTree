@@ -1,5 +1,5 @@
 public class BinarySearchTree {
-    class Node {
+    public class Node {
         private int key;
         private Node left, right;
 
@@ -46,7 +46,7 @@ public class BinarySearchTree {
     private void inorderRec(Node root) {
         if (root != null) {
             inorderRec(root.left);
-            System.out.println(root.key + " ");
+            System.out.print(root.key + " ");
             inorderRec(root.right);
         }
     }
@@ -54,7 +54,7 @@ public class BinarySearchTree {
     //Hàm thực hiện việc sắp xếp, in và Duyệt tiền tố cây nhị phân
     private void preorderRec(Node root) {
         if (root != null) {
-            System.out.println(root.key + " ");
+            System.out.print(root.key + " ");
             preorderRec(root.left);
             preorderRec(root.right);
         }
@@ -65,7 +65,7 @@ public class BinarySearchTree {
         if (root != null) {
             postorderRec(root.left);
             postorderRec(root.right);
-            System.out.println(root.key + " ");
+            System.out.print(root.key + " ");
         }
     }
 
@@ -133,7 +133,6 @@ public class BinarySearchTree {
             // Xóa phần từ nhỏ nhất bên phải
             root.right = deleteRec(root.right, root.key);
         }
-
         return root;
     }
 

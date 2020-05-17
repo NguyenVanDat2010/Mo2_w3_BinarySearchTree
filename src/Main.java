@@ -15,19 +15,18 @@ public class Main {
 
 //        System.out.println("Hien thi cay trung to: ");
 //        tree.inorder();
-//        System.out.println("Hien thi cay tien to: ");
+//        System.out.println("\nHien thi cay tien to: ");
 //        tree.preoder();
-//        System.out.println("Hien thi cay hau to: ");
+//        System.out.println("\nHien thi cay hau to: ");
 //        tree.postoder();
+//
+//        System.out.println("\n");
+//        tree.search(15);
 
-//        System.out.println(Arrays.toString(tree.search(20)));
-        tree.search(20);
-
-
-//        System.out.println("Trước khi xóa 60:");
+//        System.out.println("\n\nTrước khi xóa 70:");
 //        tree.inorder();
-//        tree.delete(60);
-//        System.out.println("Sau khi xóa 60:");
-//        tree.inorder();
+        tree.delete(30);
+//        System.out.println("\nSau khi xóa 70:");
+        tree.inorder();
     }
 }
